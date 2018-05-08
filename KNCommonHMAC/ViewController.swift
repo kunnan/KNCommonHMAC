@@ -13,6 +13,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //musksf4d0ewfocjWO3X2nr5w9uA=
+//        NSLog(@"%@",[KNCCHmacTool hmacsha1:@"kn" key:@"kn"]);//musksf4d0ewfocjWO3X2nr5w9uA=
+        NSLog("%@", "kn".hmac(algorithm: HMACAlgorithm.SHA1, key: "kn"))//kCCHmacAlgSHA1 musksf4d0ewfocjWO3X2nr5w9uA=
     }
 
     override func didReceiveMemoryWarning() {
